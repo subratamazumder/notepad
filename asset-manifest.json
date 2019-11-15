@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b100e6da.chunk.css",
+    "main.js": "/static/js/main.48c19eec.chunk.js",
+    "main.js.map": "/static/js/main.48c19eec.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5b97010b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5b97010b.js.map",
+    "static/css/2.833dd627.chunk.css": "/static/css/2.833dd627.chunk.css",
+    "static/js/2.599c6e4a.chunk.js": "/static/js/2.599c6e4a.chunk.js",
+    "static/js/2.599c6e4a.chunk.js.map": "/static/js/2.599c6e4a.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.119bee1720deea39d019ee3f191fb2b7.js": "/precache-manifest.119bee1720deea39d019ee3f191fb2b7.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.833dd627.chunk.css.map": "/static/css/2.833dd627.chunk.css.map",
+    "static/css/main.b100e6da.chunk.css.map": "/static/css/main.b100e6da.chunk.css.map",
+    "static/media/dp-logo.png": "/static/media/dp-logo.b49a8088.png",
+    "static/media/react-bootstrap.svg": "/static/media/react-bootstrap.83fe61b0.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5b97010b.js",
+    "static/css/2.833dd627.chunk.css",
+    "static/js/2.599c6e4a.chunk.js",
+    "static/css/main.b100e6da.chunk.css",
+    "static/js/main.48c19eec.chunk.js"
+  ]
+}
