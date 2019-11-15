@@ -1,10 +1,12 @@
 import React from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import GithubLogo from "../GitHub-Mark-Light-120px-plus.png";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import BrandLogo from "../dp-logo.png";
 import Alert from "react-bootstrap/Alert";
 import JSONFormatter from "json-formatter-js";
+import Image from "react-bootstrap/Image";
 class NotePad extends React.Component {
   constructor(props) {
     console.log("NotePad constructing");
@@ -69,11 +71,18 @@ class NotePad extends React.Component {
           <Nav className="mr-auto">
           </Nav>
           <Nav>
-            <div className="text-white">
-              Word Count-{this.state.wordCount} Charecter Count-
-              {this.state.charCount}
-            </div>
+            
           </Nav>
+          <Nav.Link href="https://github.com/subratamazumder/notepad">
+          <Image
+            src={GithubLogo}
+            alt="Github"
+            fluid
+            rounded
+            width="30"
+            height="30"
+          />
+        </Nav.Link>
         </Navbar>
         <Row>
           <Col sm>
@@ -88,6 +97,12 @@ class NotePad extends React.Component {
               />
             </Form.Group>
           </Col>
+        </Row>
+        <Row>
+          <Col><div className="text-dark">
+              Word Count : {this.state.wordCount} Charecter Count : {this.state.charCount}
+            </div></Col>
+        
         </Row>
         <Row>
           <Col sm>
