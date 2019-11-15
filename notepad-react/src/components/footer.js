@@ -7,7 +7,7 @@ import Image from "react-bootstrap/Image";
 function Footer() {
   return (
     <div id="home" className="text-white text-center">
-      <Container>
+      
       <Navbar bg="dark" variant="dark" sticky="bottom">
         <Nav className="navbar-text col-md-12 col-sm-12 col-xs-12">
           &copy; {new Date().getFullYear()} &nbsp;&amp; Developed By &nbsp;{" "}
@@ -31,7 +31,7 @@ function Footer() {
           </a>
         </Nav>
       </Navbar>
-      </Container>
+      
     </div>
   );
 }

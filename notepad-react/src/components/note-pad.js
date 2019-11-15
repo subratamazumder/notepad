@@ -46,64 +46,61 @@ class NotePad extends React.Component {
     });
   };
   formatJSON = event => {
-    
     const notesFormatted = JSON.stringify(this.notes, undefined, 4);
-    console.log("formatting....",notesFormatted)
+    console.log("formatting....", notesFormatted);
     this.setState({
       notes: notesFormatted
     });
   };
   render() {
     return (
-      <div>
-        <Container>
-          <Navbar bg="dark" variant="dark">
-            <Navbar.Brand href="#home">
-              <img
-                alt=""
-                src={BrandLogo}
-                width="30"
-                height="30"
-                className="d-inline-block align-top"
-              />{" "}
-              Subrata Mazumder
-            </Navbar.Brand>
-            <Nav className="mr-auto">
-              <div className="text-white font-weight-bold">My Notepad</div>
-            </Nav>
-            <Nav>
-              <div className="text-white">
-                Word Count-{this.state.wordCount} Charecter Count-
-                {this.state.charCount}
-              </div>
-            </Nav>
-          </Navbar>
-          <Row>
-            <Col sm>
-              <Form.Group controlId="exampleForm.ControlTextarea1">
-                <Form.Control
-                  placeholder="Type your text here"
-                  as="textarea"
-                  rows="15"
-                  name="notes"
-                  value={this.state.notes}
-                  onChange={this.handleInputChange}
-                />
-              </Form.Group>
-            </Col>
-          </Row>
-          <Row>
-            <Col sm>
-              <div className="text-center">
-                <Button
-                  variant="dark"
-                  type="submit"
-                  className="font-weight-bold"
-                  onClick={this.clearData}
-                >
-                  Clear
-                </Button>
-                {/* &nbsp;
+      <div id="notepad">
+        <Navbar bg="dark" variant="dark">
+          <Navbar.Brand href="#notepad" className="text-white font-weight-bold">
+            <img
+              alt=""
+              src={BrandLogo}
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+            />{" "}
+            My Notepad
+          </Navbar.Brand>
+          <Nav className="mr-auto">
+          </Nav>
+          <Nav>
+            <div className="text-white">
+              Word Count-{this.state.wordCount} Charecter Count-
+              {this.state.charCount}
+            </div>
+          </Nav>
+        </Navbar>
+        <Row>
+          <Col sm>
+            <Form.Group controlId="exampleForm.ControlTextarea1">
+              <Form.Control
+                placeholder="Type your text here"
+                as="textarea"
+                rows="15"
+                name="notes"
+                value={this.state.notes}
+                onChange={this.handleInputChange}
+              />
+            </Form.Group>
+          </Col>
+        </Row>
+        <Row>
+          <Col sm>
+            <div className="text-center">
+              <Button
+                variant="dark"
+                type="submit"
+                className="font-weight-bold"
+                onClick={this.clearData}
+              >
+                Clear
+              </Button>
+              {/* &nbsp;
                 <Button
                   variant="dark"
                   type="submit"
@@ -112,25 +109,26 @@ class NotePad extends React.Component {
                 >
                   FormatJSON
                 </Button> */}
-              </div>
-            </Col>
-          </Row>
-          <Row><br/></Row>
-          <Row>
-            <Col sm>
-              <Alert variant="info" className="text-center">
-                <h5>
-                  <i>
-                    <q>
-                      This is a stateless application, does not store typed text
-                      to any persistance storage.
-                    </q>
-                  </i>
-                </h5>
-              </Alert>
-            </Col>
-          </Row>
-        </Container>
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <br />
+        </Row>
+        <Row>
+          <Col sm>
+            <Alert variant="info" className="text-center">
+              <h5>
+                <i>
+                  <q>
+                    This is a stateless application, does not store typed text
+                    to any persistance storage.
+                  </q>
+                </i>
+              </h5>
+            </Alert>
+          </Col>
+        </Row>
       </div>
     );
   }
