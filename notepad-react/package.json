@@ -2,6 +2,7 @@
   "name": "notepad",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://subrata.dev/notepad/",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "json-formatter-js": "^2.2.1",
