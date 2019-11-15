@@ -56,7 +56,7 @@ class NotePad extends React.Component {
     return (
       <div id="notepad">
         <Navbar bg="dark" variant="dark">
-          <Navbar.Brand href="#notepad" className="text-white font-weight-bold">
+          <Navbar.Brand href="https://subrata.dev/" className="text-white font-weight-bold">
             <img
               alt=""
               src={BrandLogo}
