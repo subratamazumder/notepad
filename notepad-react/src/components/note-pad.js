@@ -54,6 +54,16 @@ class NotePad extends React.Component {
       notes: notesFormatted
     });
   };
+  saveAsFile = event => {
+    console.log("saving ",this.state.notes)
+    const element = document.createElement("a");
+    const file = new Blob([this.state.notes], {type: 'text/plain;charset=utf-8'});
+    element.href = URL.createObjectURL(file);
+    element.download = "mynotes.txt";
+    document.body.appendChild(element); // Required for this to work in FireFox
+    element.click();
+  
+  };
   render() {
     return (
       <div id="notepad">
@@ -88,6 +98,7 @@ class NotePad extends React.Component {
           <Col sm>
             <Form.Group controlId="exampleForm.ControlTextarea1">
               <Form.Control
+                
                 placeholder="Type your text here"
                 as="textarea"
                 rows="15"
@@ -124,6 +135,15 @@ class NotePad extends React.Component {
                 >
                   FormatJSON
                 </Button> */}
+                &nbsp;&nbsp;
+                <Button
+                  variant="dark"
+                  type="submit"
+                  className="font-weight-bold"
+                  onClick={this.saveAsFile}
+                >
+                  Save as File
+                </Button>
             </div>
           </Col>
         </Row>
