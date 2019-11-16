@@ -157,7 +157,7 @@ class NotePad extends React.Component {
                 <i>
                   <q>
                     This is a stateless application, does not store typed text
-                    to any persistance storage.
+                    to any persistance storage automatically.
                   </q>
                 </i>
               </h5>
